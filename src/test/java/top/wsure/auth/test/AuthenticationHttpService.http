@@ -1,0 +1,25 @@
+POST http://localhost:8080/role/delete
+Content-Type: application/x-www-form-urlencoded
+
+name=role1
+
+###
+POST http://localhost:8080/role/create
+Content-Type: application/x-www-form-urlencoded
+
+name=role1&description=role1111
+
+###
+POST http://localhost:8080/user/delete
+Content-Type: application/x-www-form-urlencoded
+
+username=role2&password=pwd2
+
+###
+POST http://localhost:8080/user/create
+Content-Type: application/x-www-form-urlencoded
+
+username=role2&password=pwd2
+
+###
+

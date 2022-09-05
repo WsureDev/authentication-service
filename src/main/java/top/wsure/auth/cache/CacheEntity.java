@@ -6,12 +6,12 @@ package top.wsure.auth.cache;
     Date:       2022/9/5
     Description:
 */
-public class Cache<T> {
+public class CacheEntity<T> {
     private T data;
 
     private long expired;
 
-    public Cache(T data, long expired) {
+    public CacheEntity(T data, long expired) {
         this.data = data;
         this.expired = expired;
     }
