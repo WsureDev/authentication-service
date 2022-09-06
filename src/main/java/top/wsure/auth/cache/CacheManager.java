@@ -1,9 +1,9 @@
 package top.wsure.auth.cache;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 /*
     FileName:   CacheManager
@@ -19,7 +19,7 @@ public class CacheManager<T> implements ICacheManager<T>{
     }
 
     public CacheManager(){
-        this.caches = new HashMap<>();
+        this.caches = new ConcurrentHashMap<>();
     }
 
     @Override
